@@ -1,7 +1,6 @@
 import { Icon } from '../../../../components/icon/Icon.tsx'
 import styled from 'styled-components'
 import { FlexWrapper } from '../../../../components/FlexWrapper.tsx'
-import { theme } from '../../../../styles/Theme.ts'
 
 type SkillPropsType = {
   iconId: string
