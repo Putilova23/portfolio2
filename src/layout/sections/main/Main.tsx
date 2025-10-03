@@ -24,9 +24,10 @@ export const Main = () => {
   )
 }
 
+
 const StyledMain = styled.div`
   min-height: 100vh;
-  background-color: #fff5e7;
+  background-color: ${theme.colors.secondaryBg};
   display: flex;
 `
 

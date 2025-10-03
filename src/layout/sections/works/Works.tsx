@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { SectionTitle } from '../../../components/SectionTitle.tsx'
-import { Menu } from '../../../components/menu/Menu.tsx'
+import { TabMenu } from './tabmenu/TabMenu.tsx'
 import { FlexWrapper } from '../../../components/FlexWrapper.tsx'
 import { Work } from './work/Work.tsx'
 import socialImg from './../../../assets/images/Rectangle 14.png'
@@ -14,8 +14,8 @@ export const Works = () => {
     <StyledWorks>
       <Container>
         <SectionTitle>My Works</SectionTitle>
-        <Menu menuItems={worksItems} />
-        <FlexWrapper justifyContent={'space-around'}>
+        <TabMenu menuItems={worksItems} />
+        <FlexWrapper justifyContent={'space-between'}>
           <Work
             title={'Social Network'}
             src={socialImg}
@@ -36,7 +36,4 @@ export const Works = () => {
   )
 }
 
-const StyledWorks = styled.section`
-  min-height: 100vh;
-  background-color: #deefff;
-`
+const StyledWorks = styled.section``
